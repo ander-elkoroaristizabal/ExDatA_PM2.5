@@ -16,3 +16,5 @@ to_plot_Bm = data.frame("Year"= years, "total"=total_Bm)
   + ylab(expression("total PM"[2.5]*" emissions (kilotons)")) 
   + labs(title = expression("Emissions of PM"[2.5]*" from motor vehicle sources in Baltimore"))
   + theme(plot.title = element_text(hjust=0.5)))
+
+ggsave("./figures/plot5.png")

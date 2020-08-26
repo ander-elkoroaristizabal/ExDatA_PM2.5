@@ -16,3 +16,5 @@ to_plot_CCE = data.frame("Year"= years, "total_CCE"=total_CCE)
   + ylab(expression("total PM"[2.5]*" emissions (kilotons)")) 
   + labs(title = expression("Emissions of PM"[2.5]*" from coal combustion-related sources"))
   + theme(plot.title = element_text(hjust=0.5)))
+
+ggsave("./figures/plot4.png")

@@ -29,3 +29,5 @@ Baltimore_LA = rbind(to_plot_Bm,to_plot_LAm)
   + ggtitle(expression("Motor vehicle emission variation in Baltimore and Los Angeles"))
   + ylab(expression("Total PM"[2.5]*" emissions (tons)"))
   + theme(plot.title = element_text(hjust=0.5)))
+
+ggsave("./figures/plot6.png")

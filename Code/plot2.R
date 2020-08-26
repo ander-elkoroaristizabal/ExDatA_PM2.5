@@ -8,6 +8,8 @@ Baltimore_totals = c(0,0,0,0)
 for (i in seq_along(years)) {
   Baltimore_totals[i] = sum(subset(Baltimore, year == years[i])$Emissions)
 }
+
+png("./figures/plot2.png")
 barplot(Baltimore_totals~years, 
         ylab=expression('Total PM'[2.5]*' emission (tons)'), 
         xlab='',
@@ -16,3 +18,4 @@ barplot(Baltimore_totals~years,
         main = expression('Total PM'[2.5]*' emissions in Baltimore through various years'),
         col = c(rgb(1,0,0, alpha = 0.9))
 )
+dev.off()

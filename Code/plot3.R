@@ -31,6 +31,8 @@ library(ggplot2)
     ggtitle(expression("PM"[2.5]*paste(" emissions in Baltimore ","City by various source types", sep="")))
   +ylab(expression("total PM"[2.5]*" emission in tons")))
 
+ggsave("./figures/plot3.png")
+
 # Code using the base system
 
 # par(mfrow=c(2,2), oma = c(0, 0, 2, 0))
