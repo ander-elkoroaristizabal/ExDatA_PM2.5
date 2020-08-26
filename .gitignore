@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+*.DS_Store
+exdata-data-NEI_data
+exdata-data-NEI_data.zip
